@@ -1,25 +1,25 @@
 
-DJ4E Samples
-============
+Online Learning Samples
+=======================
 
 This is a set of Django projects that provide free sample code to
-support the www.dj4e.com web site.
+support the postgrethon.wordpress.com web site.
 
 You can see some of the samples working at
 
-http://samples.dj4e.com
+https://postgrethon.wordpress.com
 
 To set this up, go into your virtual environment if needed, and then check this
 out into some folder:
 
     cd ...wherever...
-    git clone https://github.com/csev/dj4e-samples.git
-    cd dj4e-samples
+    git clone https://github.com/sulembutproton/onlearning.git
+    cd onlearning
     pip3 install -r requirements.txt
     python3 manage.py migrate
-    python3 manage.py createsuperuser --username dj4e-samples
-    # python3 manage.py changepassword dj4e-samples
-    # dj4e_nn_!
+    python3 manage.py createsuperuser --username onlearning
+    # python3 manage.py changepassword onlearning
+    # onlearning
     python3 manage.py runscript gview_load
     python3 manage.py runscript many_load
 
@@ -37,7 +37,7 @@ Running Locally
 If you have Django installed on your local computer you can test any of the sample
 applications by going into the folder and starting the server:
 
-    cd dj4e-samples
+    cd onlearning
     python3 manage.py runserver
 
 And visit `http://localhost:8000`.
@@ -49,18 +49,18 @@ Once you have checked out the code under `django_projects`, and
 ran the migrations and load scripts,
 go under the Web tab, update the config files to point to your new application:
 
-    Source code:                /home/--your-account--/django_projects/dj4e-samples
-    Working Directory:          /home/--your-account--/django_projects/dj4e-samples
+    Source code:                /home/--your-account--/django_projects/onlearning
+    Working Directory:          /home/--your-account--/django_projects/onlearning
 
 Use this as your `WGSI configuration file`:
 
     import os
     import sys
 
-    path = os.path.expanduser('~/django_projects/dj4e-samples')
+    path = os.path.expanduser('~/django_projects/onlearning')
     if path not in sys.path:
         sys.path.insert(0, path)
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'dj4e-samples.settings'
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'onlearning.settings'
     from django.core.wsgi import get_wsgi_application
     from django.contrib.staticfiles.handlers import StaticFilesHandler
     application = StaticFilesHandler(get_wsgi_application())
