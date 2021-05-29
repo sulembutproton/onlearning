@@ -6,12 +6,12 @@ logger = logging.getLogger(__name__)
 # Create your views here.
 
 def helloworld(request):
-    logging.error('Hello world DJ4E in the log...')
-    print('Hello world DJ4E in a print statement...')
-    response = """<html><body><p>Hello world DJ4E in HTML</p>
+    logging.error('Hello world Online Learning in the log...')
+    print('Hello world Online Learning in a print statement...')
+    response = """<html><body><p>Hello world Online Learning in HTML</p>
     <p>This sample code is available at
-    <a href="https://github.com/csev/dj4e-samples">
-    https://github.com/csev/dj4e-samples</a></p>
+    <a href="https://github.com/sulembutproton/onlearning">
+    https://github.com/sulembutproton/onlearning</a></p>
     </body></html>"""
     return HttpResponse(response)
 

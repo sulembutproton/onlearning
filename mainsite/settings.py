@@ -175,11 +175,9 @@ STATIC_URL = '/static/'
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
 MEDIA_ROOT = '/home/sulembutproton/mainsite/media'
 MEDIA_URL = '/media/'
-#STATIC_ROOT = '/home/sulembutproton/mainsite/static'
-#STATIC_URL = '/static/'
-
+STATIC_ROOT = '/home/sulembutproton/mainsite/static'
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [STATIC_DIR,]
+
 
 
 REST_FRAMEWORK = {

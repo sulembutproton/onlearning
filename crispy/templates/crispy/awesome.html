@@ -1,5 +1,5 @@
 {% extends "base_bootstrap.html" %}
-{% block title %}DJ4E Crispy Forms{% endblock %}
+{% block title %}Online Crispy Forms{% endblock %}
 {% block welcome %}
 <h1>This is a crispy (a.k.a awesome) form</h1>
 {% endblock %}
@@ -11,7 +11,7 @@
     {% csrf_token %}
     {{ form|crispy }}
     <input type="submit" value="Submit">
-    <input type="submit" 
+    <input type="submit"
        onclick="window.location='{% url 'crispy:main' %}'; return false;" value="Cancel">
   </form>
 </p>
